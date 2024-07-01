@@ -9,7 +9,7 @@ const Progress = () => {
         let id = setInterval(() => {
             setProgress((prevProgress) => {
                 if(prevProgress >= 100) {
-                    clearInterval(id)
+                    clearInterval(id);
                     return 100;
                 }
                 return  prevProgress + 10;
